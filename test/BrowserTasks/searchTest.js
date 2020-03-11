@@ -11,7 +11,6 @@ describe('BrowserSearch function test', async (done) => {
         browser = await puppeter.launch();
         page = await browser.newPage();
         await page.goto('http://www.avchap.com.br/site/horarios/');
-        await page.setViewport( { width: 1920, height: 1040} );
     });
 
     after(async () => {
